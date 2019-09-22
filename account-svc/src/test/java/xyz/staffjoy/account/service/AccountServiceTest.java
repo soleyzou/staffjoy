@@ -58,6 +58,12 @@ public class AccountServiceTest {
     private AccountService accountService;
 
     @Test
+    public void  passwordEncodeTest(){
+        accountService.updatePassword("402880e76d57d9ac016d5836bebb0000","12345");
+        System.out.println(passwordEncoder.encode("12345"));
+    }
+
+    @Test
     public void testSendEmail() {
         String externalApex = "staffjoy-v2.local";
         when(appProps.getSigningSecret()).thenReturn("test_secret");

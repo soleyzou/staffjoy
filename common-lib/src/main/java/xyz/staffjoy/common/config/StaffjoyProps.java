@@ -17,7 +17,7 @@ public class StaffjoyProps {
     @NotBlank
     private String sentryDsn;
     @NotBlank
-    // DeployEnvVar is set by Kubernetes during a new deployment so we can identify the code version
+    // DeployEnvVar is set by Kubernetes during a new deployEnvment so we can identify the code version
     private String deployEnv;
 }
 
